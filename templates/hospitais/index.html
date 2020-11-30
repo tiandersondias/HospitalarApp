@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" type="img/png" href="/static/img/logotipo.png" class="logotipo">
+	<title>Hospitalar</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-light"><!-- Iniciar menu-->
+		<div class="container">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+				<ul class="navbar-nav ml-auto mr-auto">
+					<li>
+						<a href="/index/" class="nav-link">
+							<i class="material-icons align-middle">account_balance</i>
+						Home</a>
+					</li>
+
+					<li><a href="/hospitais/" class="nav-link">
+						<i class="material-icons align-middle">camera_enhance</i>Hospitais</a>
+					</li>
+					<li><a href="/hospitais/" class="nav-link">
+						<i class="material-icons align-middle">chrome_reader_mode</i>
+					Tipos de Hospitais</a>
+				</li>
+					<li class="dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+							<i class="material-icons align-middle">dashboard</i>
+						Gerenciar Hospitais</a>
+						<ul class="dropdown-menu bg-dark ">
+							<li>
+								<a href="/criar_hospital/" class="dropdown-item text-light">
+									<i class="material-icons align-middle text-success">touch_app</i>Inserir Hospitais</a>
+							</li>
+							<li class="dropdown-divider"></li>
+							<li>
+								<a href="/hospitais/" class="dropdown-item text-light"><i class="material-icons align-middle text-warning">touch_app</i>Editar Hospitais</a>
+							</li>
+							<li class="dropdown-divider"></li>
+							<li>
+								<a href="/hospitais/" class="dropdown-item text-light"><i class="material-icons align-middle text-danger">touch_app</i>Exluir Hospitais</a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+
+				<!--Menu usuario -->
+				<ul class="navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="material-icons align-middle">perm_contact_calendar</i>Usuários</a>
+						<ul class="dropdown-menu  bg-dark">
+							<li>
+								<a href="/criar_usuario/" class="dropdown-item text-light"><i class="material-icons align-middle">perm_contact_calendar</i>Criar Usuário</a>
+							</li>
+							<li class="dropdown-divider"></li>
+							<li>
+								<a href="/login/" class="dropdown-item text-light"><i class="material-icons align-middle text-success">perm_contact_calendar</i>Logar</a>
+							</li>
+							<li class="dropdown-divider"></li>
+							<li>
+								<a href="/logout/" class="dropdown-item text-light"><i class="material-icons align-middle text-danger">perm_contact_calendar</i>Sair</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+
+			</div><!--Fim collapse-->
+			
+		</div><!--Fim container-->
+	</nav><!--fim menu-->
+	<main>
+		<section class="jumbotron"><!--inicio titulo-->
+
+			<form method="GET" class="input-group">
+				<input class="form-control" type="search" placeholder="Busque aqui!" name="search" value="">
+				<button class="btn btn-primary ml-1">Pesquisar</button>
+			</form>
+		</section><!-- Fim título-->
+		<section>
+			
+			
+<div class="container col-lg-4 mb-5">
+	<div class="row ">
+		
+		<a href="/criar_usuario/" class="btn btn-info col-lg-5 pt-5 pb-5 mb-2 mr-1"><i class="material-icons align-middle text-success">perm_contact_calendar</i>Criar Usuário</a>
+		<a href="/criar_hospital/" class="btn btn-info col-lg-5 pt-5 pb-5 mb-2"><i class="material-icons align-middle text-success">touch_app</i>Criar Hospital</a>
+		<a href="/hospitais/" class="btn btn-info col-lg-5 pt-5 pb-5 mb-2 mr-1"><i class="material-icons align-middle text-warning">stars</i>Ver Hospitais</a>
+		<a href="/hospitais/" class="btn btn-info col-lg-5 pt-5 pb-5 mb-2"><i class="material-icons align-middle text-warning">touch_app</i>Editar Hospitais</a>
+
+	</div>	
+</div>
+
+
+
+
+			
+
+		</section>
+
+	</main>
+	<footer class="mt-4 alert-primary fixed-bottom"><!--início rodapé-->
+		<div class="container d-flex justify-content-between">
+			<span class="copy mt-4">
+				© Copyright 2020
+			</span>
+			
+
+			<ul class="navbar icones">
+				<li><a href="https://github.com/" class="text-hide">GitHub</a></li>
+				<li><a href="https://www.google.com/" class="text-hide">Google plus</a></li>
+				<li><a href="https://br.linkedin.com/" class="text-hide">Linkedin</a></li>
+				<li><a href="https://www.facebook.com/" class="text-hide">Facebook</a></li>
+			</ul>
+		</div>
+	</footer><!-- fim rodapé-->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.js"></script>
+
+</body>
+</html>
